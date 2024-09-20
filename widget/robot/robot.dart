@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:projectmba2/domain.dart';
 
 class RobotList extends StatelessWidget {
+  const RobotList({super.key});
   // Liste de robots nettoyeurs
   final List<RobotNettoyeur> robots = [
     RobotNettoyeur('Nettoyeur A', 2020, 'Type A'),
@@ -32,10 +33,4 @@ class RobotList extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: RobotList(),
-  ));
 }
